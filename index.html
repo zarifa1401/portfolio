@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zarifa's portfolio showcasing frontend development, projects, skills, and contact information.">
   <title>Zarifa | Frontend Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +28,6 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
           <span class="theme-icon theme-icon-sun">☀</span>
@@ -42,10 +42,10 @@
       <div class="hero-copy">
         <p class="eyebrow">Modern Frontend Portfolio</p>
         <h1>
-          Building smooth, animated, user-first web experiences for brands that want to stand out.
+          Building modern, responsive websites with clean UI.
         </h1>
         <p class="hero-text">
-          I'm <strong>Zarifa</strong> and <span class="typing-text" id="typing-text"></span>
+          I'm <strong>Zarifa</strong>, <span class="typing-text" id="typing-text"></span>
         </p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -59,7 +59,6 @@
       <div class="hero-visual">
         <div class="profile-card float-card">
           <img src="assets/zari.jpg" alt="">
-          <p class="photo-note"></p>
           <div class="status-chip">Available for freelance work</div>
           <div class="mini-stats">
             <div>
@@ -78,28 +77,19 @@
     <section class="about section container reveal" id="about">
       <div class="section-heading">
         <p class="eyebrow">About Me</p>
-        <h2>Turning clean code into memorable digital experiences.</h2>
+        <h2>Clean code, strong visuals, and thoughtful user experience.</h2>
       </div>
       <div class="about-grid">
         <article class="glass-card">
           <h3>Who I Am</h3>
           <p>
-            I'm a frontend-focused developer passionate about crafting modern, responsive websites with performance,
-            accessibility, and refined motion in mind. I enjoy turning ideas into polished interfaces that feel alive.
+            I'm a frontend-focused developer who enjoys building polished websites that feel smooth, modern, and easy to use.
           </p>
         </article>
         <article class="glass-card">
-          <h3>What I Do</h3>
+          <h3>What I Build</h3>
           <p>
-            I design and build landing pages, portfolio websites, interactive UI sections, and engaging digital
-            experiences using HTML, CSS, JavaScript, and a strong eye for layout, spacing, and animation.
-          </p>
-        </article>
-        <article class="glass-card">
-          <h3>What I Value</h3>
-          <p>
-            I care about responsive design, thoughtful details, scalable structure, and interfaces that help people
-            trust what they see the moment the page loads.
+            Landing pages, portfolio sites, and interactive frontend sections built with HTML, CSS, JavaScript, and careful attention to detail.
           </p>
         </article>
       </div>
@@ -135,14 +125,14 @@
           </div>
           <div class="skill-item">
             <div class="skill-meta">
-              <span>UI Animation</span>
-              <span>90%</span>
-            </div>
-            <div class="skill-bar"><span data-width="90%"></span></div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-meta">
               <span>Git / GitHub</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><span data-width="80%"></span></div>
+          </div>
+            <div class="skill-item">
+            <div class="skill-meta">
+              <span>React</span>
               <span>80%</span>
             </div>
             <div class="skill-bar"><span data-width="80%"></span></div>
@@ -161,7 +151,8 @@
             <span>Dark / Light Themes</span>
             <span>Animations</span>
             <span>Accessibility</span>
-            <span>Performance Basics</span>
+            <span>React</span>
+             <span>tailwindcss</span>
           </div>
         </div>
       </div>
@@ -175,80 +166,60 @@
 
       <div class="project-grid">
         <article class="project-card glass-card">
-          <div class="project-visual gradient-one"></div>
+          <img class="project-image" src="assets/countries-explorer-preview.svg" alt="Countries Explorer preview">
           <div class="project-content">
-            <h3>Nova Studio Landing Page</h3>
+            <h3>Countries Explorer</h3>
             <p>
-              A high-conversion creative agency landing page with animated hero content, service sections, and sticky CTAs.
+              A country explorer app with search, region filters, sorting, and dark mode in a clean responsive layout.
             </p>
             <div class="project-tags">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
+              <span>API</span>
+              <span>Filtering</span>
+              <span>Dark Mode</span>
             </div>
-            <button class="project-link" data-project="nova">Full Preview</button>
+            <div class="project-actions">
+              <button class="project-link" data-project="countries">Full Preview</button>
+              <a class="project-repo" href="https://github.com/zarifa1401/countries-explorer" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card glass-card">
-          <div class="project-visual gradient-two"></div>
+          <img class="project-image" src="assets/movie-watchlist-preview.svg" alt="Movie Watchlist preview">
           <div class="project-content">
-            <h3>Pulse Dashboard Concept</h3>
+            <h3>Movie Watchlist</h3>
             <p>
-              A dark-themed analytics dashboard concept focused on card motion, clean charts layout, and modern UI hierarchy.
+              A movie tracking app where users can add titles, filter watched status, and manage a personal watchlist.
             </p>
             <div class="project-tags">
-              <span>UI Design</span>
-              <span>Responsive</span>
-              <span>Animation</span>
+              <span>CRUD</span>
+              <span>Filters</span>
+              <span>Responsive UI</span>
             </div>
-            <button class="project-link" data-project="pulse">Full Preview</button>
+            <div class="project-actions">
+              <button class="project-link" data-project="movies">Full Preview</button>
+              <a class="project-repo" href="https://github.com/zarifa1401/Movie-List" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
           </div>
         </article>
 
         <article class="project-card glass-card">
-          <div class="project-visual gradient-three"></div>
+          <img class="project-image" src="assets/afghan-proverbs-preview.svg" alt="Afghan Proverbs preview">
           <div class="project-content">
-            <h3>Motion Portfolio Template</h3>
+            <h3>Afghan Proverbs</h3>
             <p>
-              A portfolio concept with immersive transitions, interactive cards, and scroll-triggered storytelling sections.
+              A searchable proverb collection that presents Afghan sayings with translation, meaning, and a simple layout.
             </p>
             <div class="project-tags">
-              <span>Portfolio</span>
-              <span>Frontend</span>
-              <span>UX</span>
+              <span>Search</span>
+              <span>Content UI</span>
+              <span>Cultural UI</span>
             </div>
-            <button class="project-link" data-project="motion">Full Preview</button>
+            <div class="project-actions">
+              <button class="project-link" data-project="proverbs">Full Preview</button>
+              <a class="project-repo" href="https://github.com/zarifa1401/Afghan-proverbs" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
           </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="resume section container reveal" id="resume">
-      <div class="section-heading">
-        <p class="eyebrow">Resume</p>
-        <h2>Experience, workflow, and the value I bring.</h2>
-      </div>
-
-      <div class="resume-grid">
-        <article class="glass-card">
-          <h3>Highlights</h3>
-          <ul class="resume-list">
-            <li>Build clean and responsive websites optimized for desktop, tablet, and mobile.</li>
-            <li>Create modern UI systems with dark/light mode and strong visual consistency.</li>
-            <li>Use motion intentionally to improve engagement without hurting usability.</li>
-            <li>Translate portfolio concepts and client needs into real working interfaces.</li>
-          </ul>
-        </article>
-
-        <article class="glass-card">
-          <h3>Workflow</h3>
-          <ul class="resume-list">
-            <li>Plan structure and content before styling for better clarity.</li>
-            <li>Design with reusable sections, scalable spacing, and readable typography.</li>
-            <li>Layer micro-interactions, reveals, and hover states for polish.</li>
-            <li>Test responsiveness carefully so the experience stays strong everywhere.</li>
-          </ul>
         </article>
       </div>
     </section>
@@ -256,7 +227,7 @@
     <section class="contact section container reveal" id="contact">
       <div class="section-heading">
         <p class="eyebrow">Contact</p>
-        <h2>Let’s build something professional, modern, and memorable.</h2>
+        <h2>Let’s build something clean, modern, and memorable.</h2>
       </div>
 
       <div class="contact-layout">
@@ -264,9 +235,9 @@
           <h3>Reach Out</h3>
           <p>If you want a polished portfolio, landing page, or modern website, I’m ready to collaborate.</p>
           <div class="contact-links">
-            <a href="mailto:zarifarahmani99@gmail.com">zarifarahmani99@gmail.com</a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="mailto:zarifarahmani99@gmail.com" id="email-address">zarifarahmani99@gmail.com</a>
+            <a href="https://github.com/zarifa1401" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/zarifa-rahmani/" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </article>
 
@@ -290,7 +261,7 @@
   </main>
 
   <footer class="site-footer container">
-    <p>© 2026 Zarifa. designed with love❤️.</p>
+    <p>© 2026 Zarifa. Designed and built with love❤️</p>
   </footer>
 
   <div class="project-modal" id="project-modal" aria-hidden="true">

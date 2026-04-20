@@ -1,0 +1,31 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="28" fill="#0A1022"/>
+  <rect x="120" y="48" width="960" height="102" rx="24" fill="#121B34" stroke="#33446D"/>
+  <text x="156" y="102" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="34" font-weight="700">Movie Watchlist</text>
+  <text x="156" y="132" fill="#B8C2D8" font-family="Arial, sans-serif" font-size="18">Add movies, track watched status, filter, and manage your list.</text>
+  <rect x="938" y="64" width="110" height="48" rx="18" fill="#121B34" stroke="#33446D"/>
+  <text x="970" y="96" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20">Light</text>
+  <rect x="120" y="180" width="420" height="370" rx="26" fill="#121B34" stroke="#33446D"/>
+  <text x="152" y="246" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Add Movie</text>
+  <rect x="152" y="300" width="356" height="60" rx="16" fill="#060A19" stroke="#33446D"/>
+  <rect x="152" y="412" width="356" height="60" rx="16" fill="#060A19" stroke="#33446D"/>
+  <rect x="152" y="488" width="356" height="62" rx="18" fill="url(#btn)"/>
+  <text x="300" y="528" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Add Movie</text>
+  <rect x="570" y="180" width="510" height="132" rx="26" fill="#121B34" stroke="#33446D"/>
+  <text x="600" y="244" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Filter</text>
+  <rect x="600" y="292" width="68" height="52" rx="22" fill="#5B45F5"/>
+  <rect x="684" y="292" width="110" height="52" rx="22" fill="#0D142A" stroke="#33446D"/>
+  <rect x="808" y="292" width="148" height="52" rx="22" fill="#0D142A" stroke="#33446D"/>
+  <rect x="570" y="354" width="510" height="112" rx="24" fill="#121B34" stroke="#33446D"/>
+  <text x="706" y="418" fill="#C2CBDD" font-family="Arial, sans-serif" font-size="24">No movies found. Add one!</text>
+  <rect x="120" y="586" width="420" height="100" rx="24" fill="#121B34" stroke="#33446D"/>
+  <rect x="152" y="620" width="110" height="76" rx="18" fill="#263148"/>
+  <rect x="280" y="620" width="110" height="76" rx="18" fill="#103439"/>
+  <rect x="408" y="620" width="110" height="76" rx="18" fill="#3A2525"/>
+  <defs>
+    <linearGradient id="btn" x1="152" y1="488" x2="508" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4D44E8"/>
+      <stop offset="1" stop-color="#5B45F5"/>
+    </linearGradient>
+  </defs>
+</svg>

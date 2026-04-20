@@ -16,66 +16,43 @@ const modalTags = document.getElementById("modal-tags");
 const contactButton = document.getElementById("contact-button");
 
 const projectData = {
-  nova: {
-    title: "Nova Studio Landing Page",
-    description: "A conversion-focused landing page for a creative agency, featuring layered gradients, scroll reveals, bold CTA placement, and a visual hierarchy designed to feel premium from the first screen.",
+  countries: {
+    title: "Countries Explorer",
+    description: "A country explorer app that lets users search countries, filter by region, sort by population, and switch themes in a responsive interface.",
     previewClass: "gradient-one",
-    tags: ["Hero Motion", "CTA Design", "Responsive Layout"],
+    tags: ["Search", "Region Filters", "Sorting", "Theme Toggle"],
     previewMarkup: `
-      <div class="preview-ui preview-ui-site">
-        <div class="preview-topbar">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="preview-hero">
-          <div class="preview-copy">
-            <strong>Nova Studio</strong>
-            <p>Designing bold digital launches with clean visuals and smarter conversion paths.</p>
-          </div>
-          <div class="preview-panel"></div>
-        </div>
-      </div>
-    `
+      <img class="modal-image" src="assets/countries-explorer-preview.svg" alt="Countries Explorer preview">
+    `,
+    repo: "https://github.com/zarifa1401/countries-explorer"
   },
-  pulse: {
-    title: "Pulse Dashboard Concept",
-    description: "A data dashboard interface concept that balances a dark visual system with clean card spacing, metric emphasis, and subtle interaction states for a professional SaaS feel.",
+  movies: {
+    title: "Movie Watchlist",
+    description: "A movie watchlist app where users can add titles, choose genres, track watched status, filter lists, and manage a simple summary of their movies.",
     previewClass: "gradient-two",
-    tags: ["Dashboard UI", "Dark Theme", "Component Structure"],
+    tags: ["Add Movies", "Status Filters", "Summary Cards", "Dark UI"],
     previewMarkup: `
-      <div class="preview-ui preview-ui-dashboard">
-        <div class="preview-columns">
-          <div class="preview-sidebar"></div>
-          <div class="preview-main">
-            <div class="preview-metrics">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="preview-chart"></div>
-          </div>
-        </div>
-      </div>
-    `
+      <img class="modal-image" src="assets/movie-watchlist-preview.svg" alt="Movie Watchlist preview">
+    `,
+    repo: "https://github.com/zarifa1401/Movie-List"
   },
-  motion: {
-    title: "Motion Portfolio Template",
-    description: "A portfolio template built around storytelling, hover transitions, reveal-on-scroll sections, and a high-end visual style suited for developers and designers.",
+  proverbs: {
+    title: "Afghan Proverbs",
+    description: "A searchable collection of Afghan proverbs that presents English meaning, native text, and cultural context in a clean card-based layout.",
     previewClass: "gradient-three",
-    tags: ["Portfolio UX", "Animations", "Scroll Experience"],
+    tags: ["Search Interface", "Cards", "Bilingual Content", "Cultural Archive"],
     previewMarkup: `
-      <div class="preview-ui preview-ui-portfolio">
-        <div class="preview-banner"></div>
-        <div class="preview-cards">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-    `
+      <img class="modal-image" src="assets/afghan-proverbs-preview.svg" alt="Afghan Proverbs preview">
+    `,
+    repo: "https://github.com/zarifa1401/Afghan-proverbs"
   }
 };
 
 const typingWords = [
-  "I am a Frontend Developer.",
-  "I create modern UI experiences.",
-  "I build responsive portfolio websites.",
-  "I bring interfaces to life with motion."
+  "a Frontend Developer.",
+  "building modern UI.",
+  "creating responsive websites.",
+  "bringing interfaces to life."
 ];
 
 let typingWordIndex = 0;
@@ -168,7 +145,8 @@ function openModal(projectKey) {
   modalDescription.textContent = project.description;
   modalPreview.className = `modal-preview ${project.previewClass}`;
   modalPreview.innerHTML = project.previewMarkup;
-  modalTags.innerHTML = project.tags.map((tag) => `<span>${tag}</span>`).join("");
+  modalTags.innerHTML = project.tags.map((tag) => `<span>${tag}</span>`).join("") +
+    `<a class="modal-repo" href="${project.repo}" target="_blank" rel="noreferrer">View Repository</a>`;
   modal.classList.add("active");
   modal.setAttribute("aria-hidden", "false");
   body.style.overflow = "hidden";
@@ -276,6 +254,10 @@ function initParticles() {
 }
 
 function initContactButton() {
+  if (!contactButton) {
+    return;
+  }
+
   contactButton.addEventListener("click", () => {
     contactButton.textContent = "Thanks! Replace this with your real form or mail link.";
     contactButton.disabled = true;

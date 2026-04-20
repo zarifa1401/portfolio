@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zarifa | Frontend Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container">
+      <a href="#top" class="brand">Zarifa<span>.</span></a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+          <span class="theme-icon theme-icon-sun">☀</span>
+          <span class="theme-icon theme-icon-moon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container reveal" id="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Modern Frontend Portfolio</p>
+        <h1>
+          Building smooth, animated, user-first web experiences for brands that want to stand out.
+        </h1>
+        <p class="hero-text">
+          I'm <strong>Zarifa</strong> and <span class="typing-text" id="typing-text"></span>
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="Zarifa-cv.pdf" class="btn btn-secondary" download>Download CV</a>
+        </div>
+        <a href="#contact" class="hire-me" aria-label="Hire me section link">
+          <span>Hire Me</span>
+        </a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="profile-card float-card">
+          <img src="assets/zari.jpg" alt="">
+          <p class="photo-note"></p>
+          <div class="status-chip">Available for freelance work</div>
+          <div class="mini-stats">
+            <div>
+              <strong>3+</strong>
+              <span>Years Learning & Building</span>
+            </div>
+            <div>
+              <strong>12+</strong>
+              <span>Portfolio-ready Concepts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section container reveal" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Turning clean code into memorable digital experiences.</h2>
+      </div>
+      <div class="about-grid">
+        <article class="glass-card">
+          <h3>Who I Am</h3>
+          <p>
+            I'm a frontend-focused developer passionate about crafting modern, responsive websites with performance,
+            accessibility, and refined motion in mind. I enjoy turning ideas into polished interfaces that feel alive.
+          </p>
+        </article>
+        <article class="glass-card">
+          <h3>What I Do</h3>
+          <p>
+            I design and build landing pages, portfolio websites, interactive UI sections, and engaging digital
+            experiences using HTML, CSS, JavaScript, and a strong eye for layout, spacing, and animation.
+          </p>
+        </article>
+        <article class="glass-card">
+          <h3>What I Value</h3>
+          <p>
+            I care about responsive design, thoughtful details, scalable structure, and interfaces that help people
+            trust what they see the moment the page loads.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills section container reveal" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools and strengths behind the work.</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skills-list glass-card">
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span>HTML5</span>
+              <span>95%</span>
+            </div>
+            <div class="skill-bar"><span data-width="95%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span>CSS3 / Responsive Design</span>
+              <span>92%</span>
+            </div>
+            <div class="skill-bar"><span data-width="92%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span>JavaScript</span>
+              <span>88%</span>
+            </div>
+            <div class="skill-bar"><span data-width="88%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span>UI Animation</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><span data-width="90%"></span></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta">
+              <span>Git / GitHub</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><span data-width="80%"></span></div>
+          </div>
+        </div>
+
+        <div class="skills-tags glass-card">
+          <h3>Core Stack</h3>
+          <div class="tag-group">
+            <span>Semantic HTML</span>
+            <span>Modern CSS</span>
+            <span>Flexbox</span>
+            <span>Grid</span>
+            <span>JavaScript ES6+</span>
+            <span>Responsive UI</span>
+            <span>Dark / Light Themes</span>
+            <span>Animations</span>
+            <span>Accessibility</span>
+            <span>Performance Basics</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section container reveal" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work designed to feel premium and perform smoothly.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card glass-card">
+          <div class="project-visual gradient-one"></div>
+          <div class="project-content">
+            <h3>Nova Studio Landing Page</h3>
+            <p>
+              A high-conversion creative agency landing page with animated hero content, service sections, and sticky CTAs.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <button class="project-link" data-project="nova">Full Preview</button>
+          </div>
+        </article>
+
+        <article class="project-card glass-card">
+          <div class="project-visual gradient-two"></div>
+          <div class="project-content">
+            <h3>Pulse Dashboard Concept</h3>
+            <p>
+              A dark-themed analytics dashboard concept focused on card motion, clean charts layout, and modern UI hierarchy.
+            </p>
+            <div class="project-tags">
+              <span>UI Design</span>
+              <span>Responsive</span>
+              <span>Animation</span>
+            </div>
+            <button class="project-link" data-project="pulse">Full Preview</button>
+          </div>
+        </article>
+
+        <article class="project-card glass-card">
+          <div class="project-visual gradient-three"></div>
+          <div class="project-content">
+            <h3>Motion Portfolio Template</h3>
+            <p>
+              A portfolio concept with immersive transitions, interactive cards, and scroll-triggered storytelling sections.
+            </p>
+            <div class="project-tags">
+              <span>Portfolio</span>
+              <span>Frontend</span>
+              <span>UX</span>
+            </div>
+            <button class="project-link" data-project="motion">Full Preview</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resume section container reveal" id="resume">
+      <div class="section-heading">
+        <p class="eyebrow">Resume</p>
+        <h2>Experience, workflow, and the value I bring.</h2>
+      </div>
+
+      <div class="resume-grid">
+        <article class="glass-card">
+          <h3>Highlights</h3>
+          <ul class="resume-list">
+            <li>Build clean and responsive websites optimized for desktop, tablet, and mobile.</li>
+            <li>Create modern UI systems with dark/light mode and strong visual consistency.</li>
+            <li>Use motion intentionally to improve engagement without hurting usability.</li>
+            <li>Translate portfolio concepts and client needs into real working interfaces.</li>
+          </ul>
+        </article>
+
+        <article class="glass-card">
+          <h3>Workflow</h3>
+          <ul class="resume-list">
+            <li>Plan structure and content before styling for better clarity.</li>
+            <li>Design with reusable sections, scalable spacing, and readable typography.</li>
+            <li>Layer micro-interactions, reveals, and hover states for polish.</li>
+            <li>Test responsiveness carefully so the experience stays strong everywhere.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section container reveal" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something professional, modern, and memorable.</h2>
+      </div>
+
+      <div class="contact-layout">
+        <article class="glass-card contact-card">
+          <h3>Reach Out</h3>
+          <p>If you want a polished portfolio, landing page, or modern website, I’m ready to collaborate.</p>
+          <div class="contact-links">
+            <a href="mailto:zarifarahmani99@gmail.com">zarifarahmani99@gmail.com</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </article>
+
+        <form class="glass-card contact-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name">
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="Your email">
+          </label>
+          <label>
+            Message
+            <textarea rows="5" placeholder="Tell me about your project"></textarea>
+          </label>
+          <button type="button" class="btn btn-primary" id="contact-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2026 Zarifa. designed with love❤️.</p>
+  </footer>
+
+  <div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-card glass-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close project preview">×</button>
+      <p class="eyebrow">Project Preview</p>
+      <h3 id="modal-title">Project Title</h3>
+      <p id="modal-description"></p>
+      <div class="modal-preview" id="modal-preview"></div>
+      <div class="project-tags" id="modal-tags"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
